@@ -1,4 +1,25 @@
 /* Reset and base styles */
+/* :root {
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --border-color: #ddd;
+} */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e0e0e0;
+        --background-color: #1a1a1a;
+        --border-color: #333;
+    }
+}
+
+
+:root {
+    --text-color: #e0e0e0;
+    --background-color: #1a1a1a;
+    --border-color: #333;
+}
+
 *,
 *::before,
 *::after {
@@ -13,6 +34,8 @@ body {
     width: 600px;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 /* Typography */
@@ -81,7 +104,7 @@ section {
 .thumb {
     max-width: 150px;
     height: auto;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
@@ -172,7 +195,7 @@ section {
 .thumb {
     max-width: 150px;
     height: auto;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
 }
