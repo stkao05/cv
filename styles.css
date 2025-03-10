@@ -219,7 +219,7 @@ section {
     transition: opacity 0.3s ease-in-out;
     position: fixed;
     top: 2rem;
-    right: 0;
+    right: 2rem;
     z-index: 100;
     width: 650px;
 }
