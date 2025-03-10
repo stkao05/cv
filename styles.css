@@ -31,7 +31,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     padding: 2rem;
-    width: 600px;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     color: var(--text-color);
@@ -81,6 +80,11 @@ section {
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 2rem;
+    /* transition: background-color 0.2s ease-in-out; */
+}
+
+.exp-item:hover {
+    background-color: rgba(255, 255, 255, 0.025);
 }
 
 .exp-item .date {
@@ -157,10 +161,15 @@ h2 {
 
 body {
     padding: 2rem;
-    width: 600px;
+}
+
+main {
+    max-width: 600px;
+    position: relative;
 }
 
 header {
+    max-width: 600px;
     margin-bottom: 4rem;
 }
 
@@ -205,3 +214,27 @@ section {
     /* transition: box-shadow 0.2s ease-in-out; */
 }
 
+.pane-item {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    top: 2rem;
+    right: 0;
+    z-index: 100;
+    width: 650px;
+}
+
+.pane-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+/* Show pane item when parent exp-item is hovered */
+.exp-item:hover .pane-item {
+    display: block;
+    opacity: 1;
+}
