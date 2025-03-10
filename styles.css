@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/* ------------ custom styles ------------ */
+
+html {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:visited,
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+body {
+    padding: 2rem;
+    width: 600px;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.experience-item .date {
+    width: 100px;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.experience-item .content {
+    flex-grow: 1;
+}
+
