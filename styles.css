@@ -161,15 +161,14 @@ h2 {
 
 body {
     padding: 2rem;
+    max-width: 600px;
 }
 
 main {
-    max-width: 600px;
     position: relative;
 }
 
 header {
-    max-width: 600px;
     margin-bottom: 4rem;
 }
 
