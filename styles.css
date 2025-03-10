@@ -233,8 +233,10 @@ section {
     border-radius: 4px;
 }
 
-/* Show pane item when parent exp-item is hovered */
-.exp-item:hover .pane-item {
-    display: block;
-    opacity: 1;
+@media (min-width: 1200px) {
+    /* Show pane item when parent exp-item is hovered */
+    .exp-item:hover .pane-item {
+        display: block;
+        opacity: 1;
+    }
 }
