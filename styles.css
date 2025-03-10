@@ -1,16 +1,88 @@
+/* Reset and base styles */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-* {
     margin: 0;
 }
 
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    padding: 2rem;
+    width: 600px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:visited,
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Layout */
+header {
+    margin-bottom: 4rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* Experience items */
+.exp-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.exp-item .date {
+    width: 100px;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.exp-item .content {
+    flex-grow: 1;
+}
+
+/* Screenshots */
+.screenshots {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.thumb {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 img,
@@ -29,35 +101,10 @@ select {
     font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
 #root,
 #__next {
     isolation: isolate;
 }
-
 
 /* ------------ custom styles ------------ */
 
@@ -105,24 +152,24 @@ section {
     margin-bottom: 2rem;
 }
 
-.experience-item .date {
+.exp-item .date {
     width: 100px;
     margin-right: 2rem;
     flex-shrink: 0;
 }
 
-.experience-item .content {
+.exp-item .content {
     flex-grow: 1;
 }
 
-.product-screenshots {
+.screenshots {
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.product-thumbnail {
+.thumb {
     max-width: 150px;
     height: auto;
     border: 1px solid #ddd;
@@ -130,7 +177,7 @@ section {
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
 }
 
-.product-thumbnail:hover {
+.thumb:hover {
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     /* transition: box-shadow 0.2s ease-in-out; */
 }
