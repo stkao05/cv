@@ -115,3 +115,23 @@ section {
     flex-grow: 1;
 }
 
+.product-screenshots {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-thumbnail {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.product-thumbnail:hover {
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    /* transition: box-shadow 0.2s ease-in-out; */
+}
+
