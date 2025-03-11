@@ -116,6 +116,13 @@ section {
     flex-shrink: 0;
 }
 
+@media (max-width: 600px) {
+    .exp-item .date {
+        display: none;
+    }
+}
+
+
 
 .exp-item .content {
     flex-grow: 1;
