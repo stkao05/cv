@@ -26,7 +26,7 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -107,7 +107,7 @@ section {
 }
 
 .exp-item:hover {
-    background-color: rgba(255, 255, 255, 0.025);
+    /* background-color: rgba(255, 255, 255, 0.035); */
 }
 
 .exp-item .date {
